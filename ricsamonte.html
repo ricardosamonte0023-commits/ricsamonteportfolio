@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ricardo Samonte | Creative Technologist</title>
+
+<style>
+:root{
+    --tusca:#1de9b6;
+    --dark:#04090f;
+    --card:#0b1324;
+    --text:#e8fffb;
+    --muted:#8aa5a1;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,system-ui}
+html{scroll-behavior:smooth}
+body{
+    background:radial-gradient(circle at top,#0f2a24,#02070c);
+    color:var(--text)
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:18px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(14px);
+    background:rgba(2,7,12,.7);
+    z-index:999;
+}
+nav .logo{
+    color:var(--tusca);
+    font-weight:700;
+    letter-spacing:2px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:26px;
+}
+nav a{
+    color:var(--muted);
+    text-decoration:none;
+    font-weight:500;
+}
+nav a:hover{color:var(--tusca)}
+
+/* HERO */
+header{
+    min-height:100vh;
+    padding:120px 40px 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+header img{
+    width:200px;
+    filter:drop-shadow(0 0 30px var(--tusca));
+}
+header h1{
+    color:var(--tusca);
+    font-size:3.2rem;
+    margin-top:18px;
+    letter-spacing:3px;
+}
+header p{
+    color:var(--muted);
+    max-width:760px;
+    margin-top:14px;
+    line-height:1.6;
+}
+.hero-btns{
+    margin-top:32px;
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.btn{
+    padding:14px 30px;
+    border-radius:30px;
+    font-weight:600;
+    text-decoration:none;
+}
+.btn.primary{
+    background:var(--tusca);
+    color:#002018;
+}
+.btn.outline{
+    border:1px solid var(--tusca);
+    color:var(--tusca);
+}
+
+/* SECTIONS */
+section{padding:90px 10%}
+h2{
+    text-align:center;
+    color:var(--tusca);
+    font-size:2.3rem;
+    margin-bottom:30px;
+}
+.subtext{
+    text-align:center;
+    color:var(--muted);
+    margin-bottom:40px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+.card{
+    background:linear-gradient(160deg,#0c1628,#020617);
+    padding:22px;
+    border-radius:16px;
+    border:1px solid rgba(29,233,182,.18);
+    transition:.4s;
+    opacity:0;
+    transform:translateY(40px);
+}
+.card.show{opacity:1;transform:translateY(0)}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 40px rgba(29,233,182,.25);
+}
+.card img,.card video{
+    width:100%;
+    border-radius:12px;
+    margin-bottom:14px;
+}
+.card h3{color:var(--tusca);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem;line-height:1.5}
+
+/* SKILLS CLICK */
+.skill{
+    text-decoration:none;
+    cursor:pointer;
+}
+.skill::after{
+    content:"→ View Related Work";
+    display:block;
+    margin-top:12px;
+    font-size:.85rem;
+    color:var(--tusca);
+    opacity:.8;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:50px;
+    color:var(--muted);
+    border-top:1px solid rgba(29,233,182,.2);
+}
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:var(--tusca);
+    color:#002018;
+    padding:14px 22px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 0 25px rgba(29,233,182,.6);
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="logo">RS</div>
+    <ul>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#motion">Motion</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<header>
+    <img src="MYPIC.jpg" alt="Ricardo Samonte">
+    <h1>Ricardo Samonte</h1>
+    <p>
+        Creative Technologist • IT Professional<br>
+        BSIT Graduate | Former IT Specialist, IT Officer, IT Professor & Network Engineer
+    </p>
+
+    <div class="hero-btns">
+        <a href="#contact" class="btn primary">Hire Me</a>
+        <a href="#cv" class="btn outline">View CV</a>
+    </div>
+</header>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills & Tools</h2>
+<p class="subtext">Click a skill to see related projects</p>
+
+<div class="grid">
+    <a href="#branding" class="card skill">
+        <h3>UI / Graphic Design</h3>
+        <p>Photoshop, Branding, Posters, Marketing Assets</p>
+    </a>
+    <a href="#motion" class="card skill">
+        <h3>Motion Design</h3>
+        <p>After Effects, Logo Animation, Motion Graphics</p>
+    </a>
+    <a href="#video" class="card skill">
+        <h3>Video Editing</h3>
+        <p>Premiere Pro, CapCut, Social Media Videos</p>
+    </a>
+    <a href="#web" class="card skill">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, WordPress, UI Layouts</p>
+    </a>
+</div>
+</section>
+
+<!-- MOTION -->
+<section id="motion">
+<h2>Logo Animations</h2>
+<div class="grid">
+ <div class="card"><div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/clm0y2?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div></video></div>
+    <div class="card"><div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/c0k8r6?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div></video></div>
+    <div class="card"><div style="position:relative; width:100%; height:0px; padding-bottom:50.000%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/che3o7?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div></video></div>
+   
+</div>
+</section>
+
+<!-- VIDEO -->
+<section id="video">
+<h2>Video Editing</h2>
+<div class="grid">
+    <div class="card"><div style="position:relative; width:100%; height:0px; padding-bottom:177.593%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/bcje5v?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div></video></div>
+    <div class="card"><div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/nc8zwt?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div></video></div>
+</div>
+</section>
+
+<!-- WEB -->
+<section id="web">
+<h2>Website UI Design</h2>
+<div class="grid">
+    <div class="card"><img src="https://i.ibb.co/4wTqSN61/web1.png" alt="web1" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/5xtTb4Qg/web2.png" alt="web2" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/Y4r3vt7f/web3.png" alt="web3" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/nZZZLjt/web4.png" alt="web4" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/G3f7HKkV/web5.png" alt="web5" border="0"></div>
+</div>
+</section>
+
+<!-- BRANDING -->
+<section id="branding">
+<h2>Logo Design</h2>
+<div class="grid">
+  <div class="card"><img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg" alt="PASIKLABAN 2026" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="LOGO" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg" alt="LOGO DESIGN 5" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg" alt="LOGO DESIGN 4" border="0"></div>
+  <div class="card"><img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png" alt="LOGO DESIGN 1" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg" alt="LOGO DESIGN 3" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg" alt="LOGO DESIGN 2" border="0"></div>
+</div>
+</section>
+
+<!-- POSTERS -->
+<section id="poster">
+<h2>Poster Design</h2>
+<div class="grid">
+    <div class="card"><img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg" alt="poster design" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png" alt="poster design 4" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg" alt="poster design 5" border="0"></div>
+  <div class="card"><img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg" alt="poster design 3" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg" alt="poster design 2" border="0"></div>
+    <div class="card"><img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg" alt="poster design 1" border="0"></div>
+
+</div>
+</section>
+
+<!-- CV -->
+<section id="cv">
+<h2>Curriculum Vitae</h2>
+<p class="subtext">Creative Technologist & IT Professional</p>
+
+<div class="grid">
+    <div class="card">
+      <img src="https://i.ibb.co/PzFM4YQD/MYPIC.jpg" alt="MYPIC" border="0">
+        <h3>Ricardo Samonte</h3>
+        <p>
+            27 years old<br>
+            Philippines<br><br>
+            Bachelor of Science in Information Technology (BSIT)
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Professional Summary</h3>
+        <p>
+            Creative Technologist with experience as IT Specialist, IT Officer,
+            IT Professor, and Network Engineer. Skilled in web development,
+            software systems, networking, motion graphics, video editing,
+            and digital branding. Seeking a part-time role while continuously
+            upgrading professional skills.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Experience</h3>
+        <p>
+            • IT Specialist<br>
+            • IT Officer<br>
+            • IT Professor<br>
+            • Network Engineer
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Technical & Creative Skills</h3>
+        <p>
+            HTML, CSS, WordPress<br>
+            Software Development Fundamentals<br>
+            Wired & Wireless Networking<br>
+            IT Infrastructure & Support<br>
+            Adobe Photoshop<br>
+            Adobe Premiere Pro<br>
+            After Effects<br>
+            CapCut & Canva
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Career Objective</h3>
+        <p>
+            To secure a part-time position where I can apply my technical and
+            creative skills, support my daily needs, and continuously improve
+            my expertise in technology and digital media.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2>Let’s Work Together</h2>
+<div class="grid">
+    <div class="card">
+        <p>
+            📧 Email:
+            <a href="mailto:ricardosamonte0023@gmail.com" style="color:var(--tusca)">
+                ricardosamonte023@gmail.com
+            </a><br><br>
+
+            🔗 LinkedIn:
+            <a href="https://www.linkedin.com/in/ricardo-samonte-b466a9228"
+               target="_blank" style="color:var(--tusca)">
+               linkedin.com/in/ricardo-samonte
+            </a><br><br>
+
+            📱 WhatsApp:
+            <a href="https://wa.me/qr/SIYPJOW2C5TIG1"
+               target="_blank" style="color:var(--tusca)">
+               Chat on WhatsApp
+            </a><br><br>
+
+            Open for part-time and freelance opportunities.
+        </p>
+    </div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Ricardo Samonte — Creative Technology & Design</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/qr/SIYPJOW2C5TIG1" target="_blank">
+WhatsApp
+</a>
+
+<script>
+const cards=document.querySelectorAll('.card');
+const observer=new IntersectionObserver(e=>{
+    e.forEach(i=>{
+        if(i.isIntersecting) i.target.classList.add('show');
+    });
+},{threshold:.2});
+cards.forEach(c=>observer.observe(c));
+</script>
+
+</body>
+</html>

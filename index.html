@@ -32,6 +32,32 @@ nav{
     background:rgba(2,7,12,.7);
     z-index:999;
 }
+.cv-img-wrapper {
+    width: 150px;               /* small square width */
+    height: 150px;              /* small square height */
+    margin: 0 auto 30px auto;   /* center horizontally + spacing below */
+    overflow: hidden;           /* crop anything outside the square */
+    border-radius: 12px;        /* rounded corners */
+    border: 2px solid var(--tusca); /* optional border to highlight */
+    display: flex;
+    justify-content: center;    /* center image horizontally */
+    align-items: center;        /* center image vertically */
+    background: #02070c;        /* optional background */
+}
+/* Smaller grid for CV section */
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px; /* reduce spacing between cards */
+}
+
+
+.cv-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* fill square without stretching */
+}
+
 nav .logo{color:var(--tusca);font-weight:700;letter-spacing:2px}
 nav ul{list-style:none;display:flex;gap:26px}
 nav a{color:var(--muted);text-decoration:none;font-weight:500}
@@ -136,7 +162,7 @@ footer{
 <body>
 
 <nav>
-<div class="logo">RS</div>
+<div class="logo">RicSamonte</div>
 <ul>
 <li><a href="#motion">Motion</a></li>
 <li><a href="#video">Video</a></li>
@@ -150,7 +176,7 @@ footer{
 </nav>
 
 <header>
-<img src="https://i.ibb.co/PzFM4YQD/MYPIC.jpg" alt="Ricardo Samonte">
+<img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="LOGO" border="0">
 <h1>Ricardo Samonte</h1>
 <p>
 Creative Technologist • IT Professional<br>
@@ -209,13 +235,13 @@ Internal web-based Track & Trace system for monitoring records, status updates, 
 <section id="branding">
 <h2>Logo Design</h2>
 <div class="grid">
-<div class="card"><img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg" alt="Logo 1"></div>
-<div class="card"><img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="Logo 2"></div>
-<div class="card"><img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg" alt="Logo 3"></div>
-<div class="card"><img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg" alt="Logo 4"></div>
-<div class="card"><img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png" alt="Logo 5"></div>
-<div class="card"><img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg" alt="Logo 6"></div>
-<div class="card"><img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg" alt="Logo 7"></div>
+<div class="card"><img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg" alt="PASIKLABAN 2026" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg" alt="LOGO DESIGN 5" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg" alt="LOGO DESIGN 4" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png" alt="LOGO DESIGN 1" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg" alt="LOGO DESIGN 3" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg" alt="LOGO DESIGN 2" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/B5jqKPPY/Untold-colorful.png" alt="Untold colorful" border="0"></div>
 </div>
 </section>
 
@@ -223,12 +249,12 @@ Internal web-based Track & Trace system for monitoring records, status updates, 
 <section id="poster">
 <h2>Poster Design</h2>
 <div class="grid">
-<div class="card"><img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg" alt="Poster 1"></div>
-<div class="card"><img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png" alt="Poster 2"></div>
-<div class="card"><img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg" alt="Poster 3"></div>
-<div class="card"><img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg" alt="Poster 4"></div>
-<div class="card"><img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg" alt="Poster 5"></div>
-<div class="card"><img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg" alt="Poster 6"></div>
+<div class="card"><img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg" alt="poster design" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png" alt="poster design 4" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg" alt="poster design 5" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg" alt="poster design 3" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg" alt="poster design 2" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg" alt="poster design 1" border="0"></div>
 </div>
 </section>
 
@@ -247,35 +273,43 @@ Internal web-based Track & Trace system for monitoring records, status updates, 
 
 <!-- CV -->
 <section id="cv">
-<h2>Curriculum Vitae</h2>
-<p class="subtext">Creative Technologist & IT Professional</p>
-<div class="grid">
-<div class="card">
-<h3>Experience</h3>
-<p>
-IT Specialist<br>
-IT Officer<br>
-IT Professor<br>
-Network Engineer
-</p>
-</div>
+  <h2>Curriculum Vitae</h2>
+  <p class="subtext">Creative Technologist & IT Professional</p>
 
-<div class="card">
-<h3>Technical Skills</h3>
-<p>
-HTML, CSS, Web Systems<br>
-Database & Tracking Systems<br>
-Networking & IT Support<br>
-Photoshop, Premiere Pro, After Effects
-</p>
-</div>
-</div>
+  <!-- CV Image -->
+  <div class="cv-img-wrapper">
+    <img src="https://i.ibb.co/PzFM4YQD/MYPIC.jpg" alt="Ricardo Samonte">
+  </div>
+
+  <!-- Grid for CV cards -->
+  <div class="cv-grid">
+    <div class="card">
+      <h3>Experience</h3>
+      <p>
+        IT Specialist<br>
+        IT Officer<br>
+        IT Professor<br>
+        Network Engineer
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Technical Skills</h3>
+      <p>
+        HTML, CSS, Web Systems<br>
+        Database & Tracking Systems<br>
+        Networking & IT Support<br>
+        Photoshop, Premiere Pro, After Effects
+      </p>
+    </div>
+  </div>
 </section>
+
 
 <section id="contact">
 <h2>Let’s Work Together</h2>
 <p style="text-align:center">
-📧 <a href="mailto:ricardosamonte023@gmail.com" style="color:var(--tusca)">ricardosamonte023@gmail.com</a>
+<a href="mailto:ricardosamonte023@gmail.com" style="color:var(--tusca)">ricardosamonte023@gmail.com</a>
 </p>
 </section>
 

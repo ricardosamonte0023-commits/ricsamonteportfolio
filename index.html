@@ -19,7 +19,6 @@ body{
     background:radial-gradient(circle at top,#0f2a24,#02070c);
     color:var(--text)
 }
-
 /* NAV */
 nav{
     position:fixed;
@@ -33,23 +32,10 @@ nav{
     background:rgba(2,7,12,.7);
     z-index:999;
 }
-nav .logo{
-    color:var(--tusca);
-    font-weight:700;
-    letter-spacing:2px;
-}
-nav ul{
-    list-style:none;
-    display:flex;
-    gap:26px;
-}
-nav a{
-    color:var(--muted);
-    text-decoration:none;
-    font-weight:500;
-}
+nav .logo{color:var(--tusca);font-weight:700;letter-spacing:2px}
+nav ul{list-style:none;display:flex;gap:26px}
+nav a{color:var(--muted);text-decoration:none;font-weight:500}
 nav a:hover{color:var(--tusca)}
-
 /* HERO */
 header{
     min-height:100vh;
@@ -61,13 +47,14 @@ header{
     text-align:center;
 }
 header img{
-    width:200px;
-    filter:drop-shadow(0 0 30px var(--tusca));
+    width:180px;
+    border-radius:50%;
+    border:4px solid var(--tusca);
+    margin-bottom:20px;
 }
 header h1{
     color:var(--tusca);
     font-size:3.2rem;
-    margin-top:18px;
     letter-spacing:3px;
 }
 header p{
@@ -88,29 +75,14 @@ header p{
     border-radius:30px;
     font-weight:600;
     text-decoration:none;
+    display:inline-block;
 }
-.btn.primary{
-    background:var(--tusca);
-    color:#002018;
-}
-.btn.outline{
-    border:1px solid var(--tusca);
-    color:var(--tusca);
-}
-
+.btn.primary{background:var(--tusca);color:#002018}
+.btn.outline{border:1px solid var(--tusca);color:var(--tusca)}
 /* SECTIONS */
 section{padding:90px 10%}
-h2{
-    text-align:center;
-    color:var(--tusca);
-    font-size:2.3rem;
-    margin-bottom:30px;
-}
-.subtext{
-    text-align:center;
-    color:var(--muted);
-    margin-bottom:40px;
-}
+h2{text-align:center;color:var(--tusca);font-size:2.3rem;margin-bottom:20px}
+.subtext{text-align:center;color:var(--muted);margin-bottom:40px}
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -130,14 +102,15 @@ h2{
     transform:translateY(-10px);
     box-shadow:0 0 40px rgba(29,233,182,.25);
 }
-.card img{
+.card img,.card iframe{
     width:100%;
     border-radius:12px;
     margin-bottom:14px;
 }
-.card h3{color:var(--tusca);margin-bottom:8px}
-.card p{color:var(--muted);font-size:.95rem;line-height:1.5}
-
+/* SHOPIFY FIX */
+.shopify-card h3{margin-bottom:12px}
+.shopify-card p{margin-bottom:20px;line-height:1.6}
+.shopify-card .btn{margin-top:10px}
 /* FOOTER */
 footer{
     text-align:center;
@@ -145,8 +118,7 @@ footer{
     color:var(--muted);
     border-top:1px solid rgba(29,233,182,.2);
 }
-
-/* WHATSAPP FLOAT */
+/* WHATSAPP */
 .whatsapp{
     position:fixed;
     right:25px;
@@ -157,109 +129,158 @@ footer{
     border-radius:50px;
     text-decoration:none;
     font-weight:bold;
-    box-shadow:0 0 25px rgba(29,233,182,.6);
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
-    <div class="logo">RS</div>
-    <ul>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#web">Web</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-            <a href="https://untold-clothing-4.myshopify.com/" target="_blank">
-                Shopify Store
-            </a>
-        </li>
-    </ul>
+<div class="logo">RS</div>
+<ul>
+<li><a href="#motion">Motion</a></li>
+<li><a href="#video">Video</a></li>
+<li><a href="#web">Web</a></li>
+<li><a href="#branding">Logo</a></li>
+<li><a href="#poster">Posters</a></li>
+<li><a href="#shopify">Shopify</a></li>
+<li><a href="#cv">CV</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
 
-<!-- HERO -->
 <header>
-    <img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="LOGO">
-    <h1>Ricardo Samonte</h1>
-    <p>
-        Creative Technologist • IT Professional<br>
-        Web Development • UI Design • E-commerce Solutions
-    </p>
+<img src="https://i.ibb.co/PzFM4YQD/MYPIC.jpg" alt="Ricardo Samonte">
+<h1>Ricardo Samonte</h1>
+<p>
+Creative Technologist • IT Professional<br>
+BSIT Graduate | Former IT Specialist, IT Officer, IT Professor & Network Engineer
+</p>
 
-    <div class="hero-btns">
-        <a href="#contact" class="btn primary">Hire Me</a>
-        <a href="https://untold-clothing-4.myshopify.com/" target="_blank" class="btn outline">
-            View Shopify Store
-        </a>
-    </div>
+<div class="hero-btns">
+<a href="#contact" class="btn primary">Hire Me</a>
+<a href="#cv" class="btn outline">View CV</a>
+<a href="#shopify" class="btn outline">View Shopify Store</a>
+</div>
 </header>
 
-<!-- SKILLS -->
-<section id="skills">
-<h2>Skills & Tools</h2>
-<p class="subtext">Design, Development & Digital Commerce</p>
-
+<!-- MOTION -->
+<section id="motion">
+<h2>Logo Animations</h2>
 <div class="grid">
-    <div class="card">
-        <h3>UI / Graphic Design</h3>
-        <p>Photoshop, Branding, Posters, Marketing Assets</p>
-    </div>
-    <div class="card">
-        <h3>Web Development</h3>
-        <p>HTML, CSS, WordPress, Shopify</p>
-    </div>
-    <div class="card">
-        <h3>E-Commerce</h3>
-        <p>Shopify Store Setup, Product Pages, UI Optimization</p>
-    </div>
+<div class="card"><iframe src="https://streamable.com/e/clm0y2" allowfullscreen style="width:100%;height:220px;border:none"></iframe></div>
+<div class="card"><iframe src="https://streamable.com/e/c0k8r6" allowfullscreen style="width:100%;height:220px;border:none"></iframe></div>
+<div class="card"><iframe src="https://streamable.com/e/che3o7" allowfullscreen style="width:100%;height:220px;border:none"></iframe></div>
 </div>
 </section>
 
-<!-- WEB / SHOPIFY -->
+<!-- VIDEO -->
+<section id="video">
+<h2>Video Editing</h2>
+<div class="grid">
+<div class="card"><iframe src="https://streamable.com/e/bcje5v" allowfullscreen style="width:100%;height:380px;border:none"></iframe></div>
+<div class="card"><iframe src="https://streamable.com/e/nc8zwt" allowfullscreen style="width:100%;height:220px;border:none"></iframe></div>
+</div>
+</section>
+
+<!-- WEB -->
 <section id="web">
-<h2>Website Projects</h2>
-
+<h2>Website & System Projects</h2>
+<p class="subtext">UI Design, Web Systems, and Internal Platforms</p>
 <div class="grid">
 
-    <a href="https://untold-clothing-4.myshopify.com/" target="_blank" class="card" style="text-decoration:none">
-        <img src="https://i.ibb.co/4wTqSN61/web1.png" alt="Shopify Store">
-        <h3>Untold Clothing — Shopify Store</h3>
-        <p>
-            Live e-commerce website built on Shopify.<br>
-            Product catalog, responsive layout, and brand-focused UI.
-        </p>
-    </a>
+<div class="card">
+<h3 style="color:var(--tusca)">Track & Trace System</h3>
+<p>
+Internal web-based Track & Trace system for monitoring records, status updates, and document flow. Includes database integration, searching, filtering, and real-time tracking.
+</p>
+</div>
+
+<div class="card"><img src="https://i.ibb.co/4wTqSN61/web1.png" alt="Web UI 1"></div>
+<div class="card"><img src="https://i.ibb.co/5xtTb4Qg/web2.png" alt="Web UI 2"></div>
+<div class="card"><img src="https://i.ibb.co/Y4r3vt7f/web3.png" alt="Web UI 3"></div>
+<div class="card"><img src="https://i.ibb.co/nZZZLjt/web4.png" alt="Web UI 4"></div>
+<div class="card"><img src="https://i.ibb.co/G3f7HKkV/web5.png" alt="Web UI 5"></div>
 
 </div>
 </section>
 
-<!-- CONTACT -->
+<!-- LOGO DESIGN -->
+<section id="branding">
+<h2>Logo Design</h2>
+<div class="grid">
+<div class="card"><img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg" alt="Logo 1"></div>
+<div class="card"><img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="Logo 2"></div>
+<div class="card"><img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg" alt="Logo 3"></div>
+<div class="card"><img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg" alt="Logo 4"></div>
+<div class="card"><img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png" alt="Logo 5"></div>
+<div class="card"><img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg" alt="Logo 6"></div>
+<div class="card"><img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg" alt="Logo 7"></div>
+</div>
+</section>
+
+<!-- POSTERS -->
+<section id="poster">
+<h2>Poster Design</h2>
+<div class="grid">
+<div class="card"><img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg" alt="Poster 1"></div>
+<div class="card"><img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png" alt="Poster 2"></div>
+<div class="card"><img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg" alt="Poster 3"></div>
+<div class="card"><img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg" alt="Poster 4"></div>
+<div class="card"><img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg" alt="Poster 5"></div>
+<div class="card"><img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg" alt="Poster 6"></div>
+</div>
+</section>
+
+<!-- SHOPIFY -->
+<section id="shopify">
+<h2>Shopify / E-Commerce</h2>
+<p class="subtext">Live Shopify clothing brand</p>
+<div class="grid">
+<div class="card shopify-card">
+<h3>Untold Clothing</h3>
+<p>Custom Shopify store with branding, product uploads, theme customization, and deployment.</p>
+<a href="https://untold-clothing-4.myshopify.com/" target="_blank" class="btn outline">Visit Live Store</a>
+</div>
+</div>
+</section>
+
+<!-- CV -->
+<section id="cv">
+<h2>Curriculum Vitae</h2>
+<p class="subtext">Creative Technologist & IT Professional</p>
+<div class="grid">
+<div class="card">
+<h3>Experience</h3>
+<p>
+IT Specialist<br>
+IT Officer<br>
+IT Professor<br>
+Network Engineer
+</p>
+</div>
+
+<div class="card">
+<h3>Technical Skills</h3>
+<p>
+HTML, CSS, Web Systems<br>
+Database & Tracking Systems<br>
+Networking & IT Support<br>
+Photoshop, Premiere Pro, After Effects
+</p>
+</div>
+</div>
+</section>
+
 <section id="contact">
 <h2>Let’s Work Together</h2>
-
-<div class="grid">
-    <div class="card">
-        <p>
-            📧 Email:
-            <a href="mailto:ricardosamonte023@gmail.com" style="color:var(--tusca)">
-                ricardosamonte023@gmail.com
-            </a><br><br>
-
-            🔗 Shopify:
-            <a href="https://untold-clothing-4.myshopify.com/" target="_blank" style="color:var(--tusca)">
-                untold-clothing-4.myshopify.com
-            </a><br><br>
-
-            Open for freelance & part-time opportunities.
-        </p>
-    </div>
-</div>
+<p style="text-align:center">
+📧 <a href="mailto:ricardosamonte023@gmail.com" style="color:var(--tusca)">ricardosamonte023@gmail.com</a>
+</p>
 </section>
 
 <footer>
-<p>© 2026 Ricardo Samonte — Web & E-commerce Solutions</p>
+© 2026 Ricardo Samonte — Creative Technology & Design
 </footer>
 
 <a class="whatsapp" href="https://wa.me/qr/SIYPJOW2C5TIG1" target="_blank">WhatsApp</a>
@@ -267,9 +288,7 @@ footer{
 <script>
 const cards=document.querySelectorAll('.card');
 const observer=new IntersectionObserver(e=>{
-    e.forEach(i=>{
-        if(i.isIntersecting) i.target.classList.add('show');
-    });
+e.forEach(i=>{if(i.isIntersecting)i.target.classList.add('show')});
 },{threshold:.2});
 cards.forEach(c=>observer.observe(c));
 </script>

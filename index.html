@@ -156,6 +156,55 @@ footer{
     text-decoration:none;
     font-weight:bold;
 }
+<style>
+:root{
+  --tusca:#2fe6c2;
+  --card-bg:#081b29;
+}
+
+section{
+  padding:90px 6%;
+}
+
+h2{
+  text-align:center;
+  color:var(--tusca);
+  font-size:32px;
+  margin-bottom:50px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+  gap:30px;
+}
+
+.card{
+  background:var(--card-bg);
+  border-radius:20px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,.35);
+  transition:all .4s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 15px 35px rgba(0,0,0,.6);
+}
+
+.card img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  transition:transform .5s ease;
+}
+
+.card:hover img{
+  transform:scale(1.05);
+}
+</style>
+
 </style>
 </head>
 
@@ -200,61 +249,105 @@ BSIT Graduate | Former IT Specialist, IT Officer, IT Professor & Network Enginee
 </div>
 </section>
 
-<!-- VIDEO -->
 <section id="video">
 <h2>Video Editing</h2>
+
 <div class="grid">
-<div class="card"><iframe src="https://streamable.com/e/bcje5v" allowfullscreen style="width:100%;height:380px;border:none"></iframe></div>
-<div class="card"><iframe src="https://streamable.com/e/nc8zwt" allowfullscreen style="width:100%;height:220px;border:none"></iframe></div>
+
+<div class="card">
+<div class="video-wrapper">
+<iframe 
+src="https://streamable.com/e/bcje5v"
+allow="autoplay; fullscreen"
+allowfullscreen>
+</iframe>
+</div>
+</div>
+
+<div class="card">
+<div class="video-wrapper">
+<iframe 
+src="https://streamable.com/e/nc8zwt"
+allow="autoplay; fullscreen"
+allowfullscreen>
+</iframe>
+</div>
+</div>
+
 </div>
 </section>
 
-<!-- WEB -->
+
 <section id="web">
 <h2>Website & System Projects</h2>
 <p class="subtext">UI Design, Web Systems, and Internal Platforms</p>
+
 <div class="grid">
 
 <div class="card">
 <h3 style="color:var(--tusca)">Track & Trace System</h3>
 <p>
-Internal web-based Track & Trace system for monitoring records, status updates, and document flow. Includes database integration, searching, filtering, and real-time tracking.
+Internal web-based Track & Trace system for monitoring records, status updates, and document flow. 
+Includes database integration, searching, filtering, and real-time tracking.
 </p>
 </div>
 
-<div class="card"><img src="https://i.ibb.co/4wTqSN61/web1.png" alt="Web UI 1"></div>
-<div class="card"><img src="https://i.ibb.co/5xtTb4Qg/web2.png" alt="Web UI 2"></div>
-<div class="card"><img src="https://i.ibb.co/Y4r3vt7f/web3.png" alt="Web UI 3"></div>
-<div class="card"><img src="https://i.ibb.co/nZZZLjt/web4.png" alt="Web UI 4"></div>
-<div class="card"><img src="https://i.ibb.co/G3f7HKkV/web5.png" alt="Web UI 5"></div>
+<div class="card"><img src="https://i.ibb.co/4wTqSN61/web1.png" alt=""></div>
+<div class="card"><img src="https://i.ibb.co/5xtTb4Qg/web2.png" alt=""></div>
+<div class="card"><img src="https://i.ibb.co/Y4r3vt7f/web3.png" alt=""></div>
+<div class="card"><img src="https://i.ibb.co/nZZZLjt/web4.png" alt=""></div>
+<div class="card"><img src="https://i.ibb.co/G3f7HKkV/web5.png" alt=""></div>
 
 </div>
 </section>
 
-<!-- LOGO DESIGN -->
+
 <section id="branding">
 <h2>Logo Design</h2>
+
 <div class="grid">
-<div class="card"><img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg" alt="PASIKLABAN 2026" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg" alt="LOGO DESIGN 5" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg" alt="LOGO DESIGN 4" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png" alt="LOGO DESIGN 1" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg" alt="LOGO DESIGN 3" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg" alt="LOGO DESIGN 2" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/B5jqKPPY/Untold-colorful.png" alt="Untold colorful" border="0"></div>
+<div class="card"><img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg"></div>
+<div class="card"><img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg"></div>
+<div class="card"><img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg"></div>
+<div class="card"><img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png"></div>
+<div class="card"><img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg"></div>
+<div class="card"><img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg"></div>
+<div class="card"><img src="https://i.ibb.co/B5jqKPPY/Untold-colorful.png"></div>
 </div>
+
 </section>
+
 
 <!-- POSTERS -->
 <section id="poster">
 <h2>Poster Design</h2>
+
 <div class="grid">
-<div class="card"><img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg" alt="poster design" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png" alt="poster design 4" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg" alt="poster design 5" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg" alt="poster design 3" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg" alt="poster design 2" border="0"></div>
-<div class="card"><img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg" alt="poster design 1" border="0"></div>
+
+<div class="card">
+<img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg" alt="Poster Design 1">
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png" alt="Poster Design 2">
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg" alt="Poster Design 3">
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg" alt="Poster Design 4">
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg" alt="Poster Design 5">
+</div>
+
+<div class="card">
+<img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg" alt="Poster Design 6">
+</div>
+
 </div>
 </section>
 

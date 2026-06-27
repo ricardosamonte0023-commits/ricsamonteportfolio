@@ -1,337 +1,544 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ricardo Samonte | Creative Technologist</title>
 
-<style>
-:root{
-    --tusca:#1de9b6;
-    --dark:#04090f;
-    --card:#0b1324;
-    --text:#e8fffb;
-    --muted:#8aa5a1;
-}
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,system-ui}
-html{scroll-behavior:smooth}
-body{
-    background:radial-gradient(circle at top,#0f2a24,#02070c);
-    color:var(--text)
-}
+<title>Ricardo Samonte | Portfolio</title>
 
-/* NAV */
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:18px 10%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    backdrop-filter:blur(14px);
-    background:rgba(2,7,12,.7);
-    z-index:999;
-}
-nav .logo{color:var(--tusca);font-weight:700;letter-spacing:2px}
-nav ul{list-style:none;display:flex;gap:26px}
-nav a{color:var(--muted);text-decoration:none;font-weight:500}
-nav a:hover{color:var(--tusca)}
+<link rel="stylesheet" href="style.css">
 
-/* HERO */
-header{
-    min-height:100vh;
-    padding:120px 40px 40px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-header img{
-    width:200px;
-    filter:drop-shadow(0 0 30px var(--tusca));
-}
-header h1{
-    color:var(--tusca);
-    font-size:3.2rem;
-    margin-top:18px;
-    letter-spacing:3px;
-}
-header p{
-    color:var(--muted);
-    max-width:760px;
-    margin-top:14px;
-    line-height:1.6;
-}
-.hero-btns{
-    margin-top:32px;
-    display:flex;
-    gap:18px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-.btn{
-    padding:14px 30px;
-    border-radius:30px;
-    font-weight:600;
-    text-decoration:none;
-}
-.btn.primary{background:var(--tusca);color:#002018}
-.btn.outline{border:1px solid var(--tusca);color:var(--tusca)}
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-/* SECTIONS */
-section{padding:90px 10%}
-h2{text-align:center;color:var(--tusca);font-size:2.3rem;margin-bottom:30px}
-.subtext{text-align:center;color:var(--muted);margin-bottom:40px}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-/* CARD — ALWAYS VISIBLE */
-.card{
-    background:linear-gradient(160deg,#0c1628,#020617);
-    padding:26px;
-    border-radius:16px;
-    border:1px solid rgba(29,233,182,.18);
-    transition:transform .4s, box-shadow .4s;
-}
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 40px rgba(29,233,182,.25);
-}
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-.card img,
-.card iframe,
-.card video{
-    width:100%;
-    border-radius:12px;
-    margin-bottom:14px;
-}
-
-/* SHOPIFY */
-.shopify-wrap{
-    display:flex;
-    justify-content:center;
-}
-.shopify-card{
-    max-width:520px;
-    width:100%;
-    text-align:center;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:50px;
-    color:var(--muted);
-    border-top:1px solid rgba(29,233,182,.2);
-}
-
-/* WHATSAPP */
-.whatsapp{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    background:var(--tusca);
-    color:#002018;
-    padding:14px 22px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:bold;
-    box-shadow:0 0 25px rgba(29,233,182,.6);
-}
-</style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav>
-<div class="logo">RS</div>
+<!--================ NAVIGATION ================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+MY PORTFOLIO
+
+</div>
+
 <ul>
-<li><a href="#motion">Motion</a></li>
-<li><a href="#video">Video</a></li>
-<li><a href="#web">Web</a></li>
-<li><a href="#poster">Posters</a></li>
-<li><a href="#shopify">Shopify</a></li>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#experience">Experience</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#videos">Animations</a></li>
+
 <li><a href="#cv">CV</a></li>
+
 <li><a href="#contact">Contact</a></li>
+
 </ul>
+
 </nav>
 
-<!-- HERO -->
-<header>
-<img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="LOGO">
-<h1>Ricardo Samonte</h1>
-<p>
-Creative Technologist • IT Professional<br>
-BSIT Graduate | Former IT Specialist, IT Officer, IT Professor & Network Engineer
-</p>
-
-<div class="hero-btns">
-<a href="#contact" class="btn primary">Hire Me</a>
-<a href="#cv" class="btn outline">View CV</a>
-<a href="https://untold-clothing-4.myshopify.com/" target="_blank" class="btn outline">
-View Shopify Store
-</a>
-</div>
 </header>
 
-<!-- MOTION -->
-<section id="motion">
-<h2>Logo Animations</h2>
-<div class="grid">
-<div class="card">
-<iframe src="https://streamable.com/e/clm0y2" height="220" allow="fullscreen" allowfullscreen></iframe>
+<!--================ HERO SECTION ================-->
+
+<section id="home" class="hero">
+
+<div class="hero-left">
+
+<img src="PROFILE PIC.jpg" alt="Ricardo Samonte">
+
 </div>
-<div class="card">
-<iframe src="https://streamable.com/e/c0k8r6" height="220" allow="fullscreen" allowfullscreen></iframe>
-</div>
-<div class="card">
-<iframe src="https://streamable.com/e/che3o7" height="220" allow="fullscreen" allowfullscreen></iframe>
-</div>
-</div>
-</section>
 
-<!-- VIDEO -->
-<section id="video">
-<h2>Video Editing</h2>
-<div class="grid">
-<div class="card">
-<iframe src="https://streamable.com/e/bcje5v" height="380" allow="fullscreen" allowfullscreen></iframe>
-</div>
-<div class="card">
-<iframe src="https://streamable.com/e/nc8zwt" height="220" allow="fullscreen" allowfullscreen></iframe>
-</div>
-</div>
-</section>
+<div class="hero-right">
 
-<!-- WEB -->
-<section id="web">
-<h2>Website UI Design</h2>
-<div class="grid">
-<div class="card"><img src="https://i.ibb.co/4wTqSN61/web1.png"></div>
-<div class="card"><img src="https://i.ibb.co/5xtTb4Qg/web2.png"></div>
-<div class="card"><img src="https://i.ibb.co/Y4r3vt7f/web3.png"></div>
-<div class="card"><img src="https://i.ibb.co/nZZZLjt/web4.png"></div>
-<div class="card"><img src="https://i.ibb.co/G3f7HKkV/web5.png"></div>
-</div>
-</section>
-<!-- BRANDING -->
-<section id="branding">
-<h2>Logo Design / Branding</h2>
-<p class="subtext">Brand identities and logo designs for events, businesses, and organizations</p>
+<h3>Hello, I'm</h3>
 
-<div class="grid">
-  <div class="card">
-    <img src="https://i.ibb.co/RGwwbpLF/PASIKLABAN-2026.jpg" alt="PASIKLABAN 2026">
-  </div>
+<h1>RICARDO SAMONTE</h1>
 
-  <div class="card">
-    <img src="https://i.ibb.co/KphBnrCT/LOGO.jpg" alt="Logo">
-  </div>
+<h2>IT / NETWORK ENGINEER</h2>
 
-  <div class="card">
-    <img src="https://i.ibb.co/Gf6gk6DZ/LOGO-DESIGN-5.jpg" alt="Logo Design 5">
-  </div>
-
-  <div class="card">
-    <img src="https://i.ibb.co/hRPDYXVH/LOGO-DESIGN-4.jpg" alt="Logo Design 4">
-  </div>
-
-  <div class="card">
-    <img src="https://i.ibb.co/qYR1cbC3/LOGO-DESIGN-1.png" alt="Logo Design 1">
-  </div>
-
-  <div class="card">
-    <img src="https://i.ibb.co/ynpGjvXW/LOGO-DESIGN-3.jpg" alt="Logo Design 3">
-  </div>
-
-  <div class="card">
-    <img src="https://i.ibb.co/8LNrxc29/LOGO-DESIGN-2.jpg" alt="Logo Design 2">
-  </div>
-</div>
-</section>
-
-
-<!-- POSTERS -->
-<section id="poster">
-<h2>Poster Design</h2>
-<div class="grid">
-<div class="card"><img src="https://i.ibb.co/KjsQRRPg/poster-design.jpg"></div>
-<div class="card"><img src="https://i.ibb.co/ZRhLw8n5/poster-design-4.png"></div>
-<div class="card"><img src="https://i.ibb.co/mVmHfHMC/poster-design-5.jpg"></div>
-<div class="card"><img src="https://i.ibb.co/mCDDH3X2/poster-design-3.jpg"></div>
-<div class="card"><img src="https://i.ibb.co/WWfZmZMK/poster-design-2.jpg"></div>
-<div class="card"><img src="https://i.ibb.co/Df8ZRcn5/poster-design-1.jpg"></div>
-</div>
-</section>
-
-<!-- SHOPIFY -->
-<section id="shopify">
-<h2>Shopify / E-Commerce</h2>
-<p class="subtext">Live clothing brand built and managed on Shopify</p>
-<div class="shopify-wrap">
-<div class="card shopify-card">
-<h3>Untold Clothing</h3>
 <p>
-End-to-end Shopify setup including theme customization,
-branding, product management, and deployment.
+
+Dedicated and proactive IT / Network Engineer with a strong foundation
+in Networking, System Administration, Technical Support and RF
+Planning.
+
 </p>
-<a href="https://untold-clothing-4.myshopify.com/" target="_blank" class="btn outline">
-Visit Live Store
+
+<div class="hero-buttons">
+
+<a href="#gallery" class="btn">
+
+View Portfolio
+
 </a>
-</div>
-</div>
-</section>
 
-<!-- CV -->
-<section id="cv">
-<h2>Curriculum Vitae</h2>
-<p class="subtext">Creative Technologist & IT Professional</p>
-<div class="grid">
-<div class="card">
-<h3>Professional Background</h3>
-<p>
-Former IT Specialist, IT Officer, Network Engineer, and IT Professor.
-Experienced in system administration, networking, creative media,
-UI design, and digital branding.
-</p>
-</div>
-<div class="card">
-<h3>Core Skills</h3>
-<p>
-• Video Editing & Motion Graphics<br>
-• Logo Design & Animation<br>
-• Website UI / UX Design<br>
-• Shopify & E-Commerce<br>
-• Network & IT Infrastructure
-</p>
-</div>
-</div>
-</section>
+<a href="CV.pdf" class="btn btn-outline" download>
 
-<!-- CONTACT -->
-<section id="contact">
-<h2>Let’s Work Together</h2>
-<p style="text-align:center">
-📧 <a href="mailto:ricardosamonte023@gmail.com" style="color:var(--tusca)">
-ricardosamonte023@gmail.com
+Download CV
+
 </a>
-</p>
+
+</div>
+
+<div class="socials">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+</div>
+
+</div>
+
 </section>
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="about">
+
+    <div class="section-title">
+        <h2>About Me</h2>
+        <span>Who I Am</span>
+    </div>
+
+    <div class="about-container">
+
+        <div class="about-text">
+
+            <h3>Professional Summary</h3>
+
+            <p>
+                Dedicated and proactive IT / Network Engineer with strong
+                experience in networking, wireless deployment, RF planning,
+                system administration, and technical support.
+                Passionate about solving complex network problems while
+                continuously learning new technologies.
+            </p>
+
+            <div class="skills">
+
+                <span>Networking</span>
+                <span>Wireless RF</span>
+                <span>MikroTik</span>
+                <span>Ubiquiti</span>
+                <span>Cambium</span>
+                <span>Mimosa</span>
+                <span>UniFi</span>
+                <span>RouterOS</span>
+                <span>VLAN</span>
+                <span>OSPF</span>
+                <span>DHCP</span>
+                <span>NAT</span>
+                <span>Technical Support</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= EXPERIENCE ================= -->
+
+<section id="experience" class="experience">
+
+<div class="section-title">
+
+<h2>Experience</h2>
+
+<span>Career Journey</span>
+
+</div>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Junior Network Engineer</h3>
+
+<h4>Achieve Without Borders Network Inc.</h4>
+
+<p>April 2024 - Present</p>
+
+<ul>
+
+<li>Wireless PtP and PtMP deployment</li>
+
+<li>RF Planning & Frequency Optimization</li>
+
+<li>Network Troubleshooting</li>
+
+<li>VLAN Configuration</li>
+
+<li>OSPF Routing</li>
+
+<li>Static Routing</li>
+
+<li>RouterOS Administration</li>
+
+<li>Mimosa, Cambium & Ubiquiti Configuration</li>
+
+<li>PoE Deployment</li>
+
+<li>Signal Analysis</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>MIS Head</h3>
+
+<h4>ALSGRO Industrial and Dev't Corp.</h4>
+
+<p>September 2021 - November 2023</p>
+
+<ul>
+
+<li>Managed Company IT Infrastructure</li>
+
+<li>CCTV Systems</li>
+
+<li>Biometric Systems</li>
+
+<li>GPS Tracking</li>
+
+<li>RFID Systems</li>
+
+<li>Company Website Development</li>
+
+<li>System Administration</li>
+
+<li>Project Management</li>
+
+<li>Technical Support</li>
+
+<li>Asset Management</li>
+
+</ul>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Business Process Associate</h3>
+
+<h4>ADEC Innovations</h4>
+
+<p>June 2019 - September 2021</p>
+
+<ul>
+
+<li>Data Analysis</li>
+
+<li>Mortgage Processing</li>
+
+<li>Quality Assurance</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section class="certifications">
+
+<div class="section-title">
+
+<h2>Certifications</h2>
+
+<span>Professional Learning</span>
+
+</div>
+
+<div class="cert-grid">
+
+<div class="cert-card">
+
+<h4>Cisco Networking Academy</h4>
+
+<p>Introduction to Cybersecurity</p>
+
+</div>
+
+<div class="cert-card">
+
+<h4>Cisco Networking Academy</h4>
+
+<p>Network Basics</p>
+
+</div>
+
+<div class="cert-card">
+
+<h4>cnMaestro</h4>
+
+<p>Wi-Fi Fundamentals</p>
+
+</div>
+
+<div class="cert-card">
+
+<h4>cnMaestro X</h4>
+
+<p>Advanced Services: EasyPass</p>
+
+</div>
+
+<div class="cert-card">
+
+<h4>cnMaestro X</h4>
+
+<p>Fundamentals</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= PORTFOLIO ================= -->
+
+<section id="gallery" class="gallery-section">
+
+    <div class="section-title">
+        <h2>My Portfolio</h2>
+        <span>Creative Works</span>
+    </div>
+
+    <!-- ================= LOGO DESIGNS ================= -->
+
+    <h3 class="gallery-title">Logo Designs</h3>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="logo design.png" alt="Logo Design">
+        </div>
+
+        <div class="gallery-card">
+            <img src="logo design1.jpg" alt="Logo Design 1">
+        </div>
+
+        <div class="gallery-card">
+            <img src="logo design2.jpg" alt="Logo Design 2">
+        </div>
+
+        <div class="gallery-card">
+            <img src="logo design3.jpg" alt="Logo Design 3">
+        </div>
+
+        <div class="gallery-card">
+            <img src="logo design4.jpg" alt="Logo Design 4">
+        </div>
+
+    </div>
+
+
+    <!-- ================= POSTER DESIGNS ================= -->
+
+    <h3 class="gallery-title">Poster Designs</h3>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN.png" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN2.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN3.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN4.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN5.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN6.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="POSTERDESIGN7.jpg" alt="">
+        </div>
+
+    </div>
+
+
+    <!-- ================= WEBSITE DESIGNS ================= -->
+
+    <h3 class="gallery-title">Website Designs</h3>
+
+    <div class="gallery-grid">
+
+        <div class="gallery-card">
+            <img src="website1.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="website2.jpg" alt="">
+        </div>
+
+        <div class="gallery-card">
+            <img src="website3.jpg" alt="">
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= LOGO ANIMATION ================= -->
+
+<section id="videos" class="videos">
+
+    <div class="section-title">
+        <h2>Logo Animations</h2>
+        <span>Motion Graphics</span>
+    </div>
+
+    <div class="video-grid">
+
+        <div class="video-card">
+            <video controls>
+                <source src="LOGO ANIMATION1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Logo Animation 1</h3>
+        </div>
+
+        <div class="video-card">
+            <video controls>
+                <source src="LOGO ANNIMATION.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h3>Logo Animation 2</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CV ================= -->
+
+<section id="cv" class="cv-section">
+
+    <div class="section-title">
+        <h2>Curriculum Vitae</h2>
+        <span>Professional Resume</span>
+    </div>
+
+    <div class="cv-container">
+
+        <iframe src="CV.pdf"></iframe>
+
+        <br><br>
+
+        <a href="CV.pdf" download class="btn">
+            Download My CV
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+        <h2>Contact Me</h2>
+        <span>Let's Work Together</span>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact-card">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <h3>Phone</h3>
+
+            <p>0975-788-8699</p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <i class="fa-solid fa-envelope"></i>
+
+            <h3>Email</h3>
+
+            <p>ricardosamonte023@gmail.com</p>
+
+        </div>
+
+        <div class="contact-card">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            <h3>Location</h3>
+
+            <p>Bacoor City, Cavite</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
-© 2026 Ricardo Samonte — Creative Technology & Design
+
+    <h2>Ricardo Samonte</h2>
+
+    <p>IT • Network Engineer • Graphic Designer • Web Developer</p>
+
+    <p>
+
+        © 2026 All Rights Reserved
+
+    </p>
+
 </footer>
 
-<a class="whatsapp" href="https://wa.me/qr/SIYPJOW2C5TIG1" target="_blank">
-WhatsApp
-</a>
+<script src="script.js"></script>
 
 </body>
+
 </html>
